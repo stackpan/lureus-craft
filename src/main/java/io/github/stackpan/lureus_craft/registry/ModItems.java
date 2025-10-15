@@ -2,8 +2,9 @@ package io.github.stackpan.lureus_craft.registry;
 
 import io.github.stackpan.lureus_craft.LureusCraft;
 import io.github.stackpan.lureus_craft.component.type.ModFoodComponents;
-import net.minecraft.component.type.FoodComponents;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -31,6 +32,9 @@ public class ModItems {
         return item;
     }
 
-    public static void initialize() {}
+    public static void initialize() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
+                .register(itemGroup -> itemGroup.add(NASI_PADANG));
+    }
 
 }

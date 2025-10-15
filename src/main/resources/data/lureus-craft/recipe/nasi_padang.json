@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WCS",
+    " B "
+  ],
+  "key": {
+    "W": [
+      "minecraft:wheat"
+    ],
+    "C": [
+      "minecraft:cooked_chicken"
+    ],
+    "S": [
+      "minecraft:sugar"
+    ],
+    "B": [
+      "minecraft:bowl"
+    ]
+  },
+  "result": {
+    "id": "lureus-craft:nasi_padang",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": [
+        {
+          "text": "Nasi Padang",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "lureus-craft:nasi_padang",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

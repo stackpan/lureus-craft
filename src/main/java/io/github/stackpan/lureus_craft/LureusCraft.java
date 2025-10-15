@@ -1,5 +1,6 @@
 package io.github.stackpan.lureus_craft;
 
+import io.github.stackpan.lureus_craft.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +20,8 @@ public class LureusCraft implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello LureusCraft!");
+
+        ModItems.initialize();
 	}
 }
